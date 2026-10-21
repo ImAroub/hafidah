@@ -1,0 +1,11 @@
+# User-uploaded files
+api/uploads/invoices/*
+!api/uploads/invoices/.gitkeep
+api/uploads/operations/*
+!api/uploads/operations/.gitkeep
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

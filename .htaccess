@@ -1,0 +1,34 @@
+RewriteEngine On
+
+# Uploaded images → serve the real file directly
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^api/uploads/ - [L]
+
+# CP API requests → execute PHP
+RewriteRule ^cp/api/(.*)$ cp/api/index.php [QSA,L]
+
+# API requests → execute PHP
+RewriteRule ^api/(.*)$ api/index.php [QSA,L]
+
+# Allow directory listing for all real directories
+Options +Indexes
+
+# Main project URL → landing page
+RewriteRule ^$ welcome/index.html [L]
+
+# Existing files → open directly
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ - [L]
+
+# Existing subdirectories → open directly
+# Excludes project root and /cp
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^(?!cp(?:/|$)).+ - [L]
+
+# CP → admin app
+RewriteRule ^cp/?$ cp/app/index.html [L]
+RewriteRule ^cp/(.*)$ cp/app/index.html [L]
+
+# Everything else → user SPA
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ app/index.html [L]
