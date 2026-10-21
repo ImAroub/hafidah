@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="حافظة - نظّم فواتيرك وتابع الضمان والاسترجاع والاستبدال والعمليات في مكان واحد.">
+  <title>حافظة</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/hafidah/welcome/css/style.css">
+</head>
+<body>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container navbar">
+      <a class="brand" href="#home" aria-label="حافظة - الرئيسية">حافظة</a>
+
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="فتح القائمة" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-links" id="navLinks" aria-label="التنقل الرئيسي">
+        <a href="#home">الرئيسية</a>
+        <a href="#features">المميزات</a>
+        <a href="#how-it-works">كيف يعمل؟</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="nav-login" href="/hafidah/app/auth/login">تسجيل الدخول</a>
+        <a class="button button--small" href="/hafidah/app/auth/register">إنشاء حساب</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <span class="eyebrow">حافظة لفواتيرك وما بعدها</span>
+          <h1>كل ما يخص فواتيرك،<br>محفوظ في مكان واحد.</h1>
+          <p>حافظة ينظم فواتيرك ويتابع مواعيدها وعملياتها، لتصل إلى ما تحتاجه بسهولة.</p>
+
+          <div class="hero-actions">
+            <a class="button" href="/hafidah/app/auth/register">ابدأ الآن</a>
+            <a class="button button--outline" href="/hafidah/app/auth/login">تسجيل الدخول</a>
+          </div>
+
+          <div class="hero-note">
+            <span class="hero-note-dot"></span>
+            فواتيرك، مواعيدك وعملياتك مرتبطة في مكان واحد
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="screen-frame screen-frame--hero">
+            <img src="/hafidah/welcome/images/dashboard.png" alt="لوحة التحكم في حافظة">
+          </div>
+
+          <div class="floating-card floating-card--warranty">
+            <span class="floating-icon">✓</span>
+            <div>
+              <strong>الضمان</strong>
+              <span>متبقي 12 يومًا</span>
+            </div>
+          </div>
+
+          <div class="floating-card floating-card--operation">
+            <span class="floating-icon">+</span>
+            <div>
+              <strong>تم إضافة</strong>
+              <span>عملية صيانة</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="problem section">
+      <div class="container">
+        <div class="section-heading section-heading--center reveal">
+          <span class="section-kicker">بعد الشراء</span>
+          <h2>الفاتورة مهمة… حتى بعد الشراء.</h2>
+          <p>فاتورة قد تفقد، صيانة لها موعد، وفترة ضمان قد تنتهي قبل أن تتذكرها.</p>
+        </div>
+
+        <div class="problem-grid stagger-group">
+          <article class="problem-item reveal">
+            <div class="problem-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64" role="img">
+                <path d="M18 8h28a4 4 0 0 1 4 4v43l-7-4-6 4-6-4-6 4-7-4V12a4 4 0 0 1 4-4Z"></path>
+                <path d="M25 21h18M25 31h14M25 41h10"></path>
+              </svg>
+            </div>
+            <span class="problem-number">01</span>
+            <h3>فاتورة</h3>
+            <p>أين حفظتها؟</p>
+          </article>
+
+          <article class="problem-item reveal">
+            <div class="problem-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64" role="img">
+                <rect x="10" y="14" width="44" height="40" rx="7"></rect>
+                <path d="M20 8v12M44 8v12M10 26h44M20 36h6M30 36h6M40 36h6M20 44h6M30 44h6"></path>
+              </svg>
+            </div>
+            <span class="problem-number">02</span>
+            <h3>تقويم</h3>
+            <p>متى ينتهي الموعد؟</p>
+          </article>
+
+          <article class="problem-item reveal">
+            <div class="problem-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64" role="img">
+                <path d="M18 45h28l-4-6V27c0-7-4-12-10-12s-10 5-10 12v12l-4 6Z"></path>
+                <path d="M27 50c1 4 3 6 5 6s4-2 5-6M29 10h6"></path>
+              </svg>
+            </div>
+            <span class="problem-number">03</span>
+            <h3>تنبيه</h3>
+            <p>هل ما زال هناك وقت؟</p>
+          </article>
+        </div>
+
+        <div class="problem-ending reveal">
+          <span>تفاصيل يسهل نسيانها.</span>
+          <strong>حافظة يجمعها في مكان واحد.</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="features section" id="features">
+      <div class="container">
+        <div class="section-heading section-heading--center reveal">
+          <span class="section-kicker">الحل</span>
+          <h2>هنا يأتي دور حافظة.</h2>
+          <p>من حفظ الفاتورة إلى متابعة ما يحدث بعدها، كل شيء مرتبط ومنظم.</p>
+        </div>
+
+        <div class="features-grid stagger-group">
+          <article class="feature-item reveal">
+            <div class="feature-heading">
+              <span>01</span>
+              <h3>احفظ فواتيرك</h3>
+            </div>
+            <div class="feature-media">
+              <img src="/hafidah/welcome/images/invoice.png" alt="تفاصيل فاتورة داخل حافظة">
+            </div>
+            <p>احتفظ ببيانات الشراء وصورة الفاتورة للرجوع إليها وقت الحاجة.</p>
+          </article>
+
+          <article class="feature-item reveal">
+            <div class="feature-heading">
+              <span>02</span>
+              <h3>تابع المواعيد المهمة</h3>
+            </div>
+            <div class="feature-media">
+              <img src="/hafidah/welcome/images/alerts.png" alt="التنبيهات القادمة داخل حافظة">
+            </div>
+            <p>تابع الضمان والاسترجاع والاستبدال والتجديد قبل انتهاء المدة.</p>
+          </article>
+
+          <article class="feature-item reveal">
+            <div class="feature-heading">
+              <span>03</span>
+              <h3>وثّق العمليات</h3>
+            </div>
+            <div class="feature-media">
+              <img src="/hafidah/welcome/images/operations.png" alt="سجل عمليات الفاتورة داخل حافظة">
+            </div>
+            <p>سجّل الصيانة والاستبدال والاسترجاع وغيرها مع تفاصيل كل عملية.</p>
+          </article>
+        </div>
+
+        <div class="showcase">
+          <div class="showcase-copy reveal">
+            <span class="section-kicker">نظرة واحدة</span>
+            <h2>شاهد كل شيء بوضوح.</h2>
+            <p>لوحة واحدة تمنحك نظرة سريعة على فواتيرك وعملياتك والتنبيهات التي تحتاج إلى متابعتها.</p>
+
+            <div class="showcase-points">
+              <span>الفواتير</span>
+              <span>العمليات</span>
+              <span>التنبيهات</span>
+            </div>
+          </div>
+
+          <div class="showcase-image reveal">
+            <div class="screen-frame">
+              <img src="/hafidah/welcome/images/dashboard.png" alt="لوحة حافظة الرئيسية">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="how section" id="how-it-works">
+      <div class="container">
+        <div class="section-heading section-heading--center reveal">
+          <span class="section-kicker">ببساطة</span>
+          <h2>ابدأ في ثلاث خطوات.</h2>
+        </div>
+
+        <div class="steps stagger-group">
+          <div class="steps-line" aria-hidden="true"></div>
+
+          <article class="step reveal">
+            <div class="step-number">01</div>
+            <div class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64">
+                <path d="M18 9h24l8 8v38H18Z"></path>
+                <path d="M42 9v10h10M26 30h16M26 38h16M34 23v14M27 30h14"></path>
+              </svg>
+            </div>
+            <h3>أضف فاتورتك</h3>
+            <p>أدخل بيانات الشراء وأرفق صورة الفاتورة. حدد الضمان والاسترجاع والاستبدال أو التجديد.</p>
+          </article>
+
+          <article class="step reveal">
+            <div class="step-number">02</div>
+            <div class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64">
+                <path d="m17 47 14-14M38 18l8 8M31 33 16 16M20 16l28 28"></path>
+                <circle cx="18" cy="48" r="5"></circle>
+                <circle cx="46" cy="20" r="5"></circle>
+              </svg>
+            </div>
+            <h3>أضف العمليات التابعة للفاتورة</h3>
+            <p>سجّل كل ما يطرأ بعد الشراء، كالصيانة والاسترجاع والاستبدال والتجديد، مع تفاصيل كل عملية.</p>
+          </article>
+
+          <article class="step reveal">
+            <div class="step-number">03</div>
+            <div class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64">
+                <path d="M17 45h30l-5-7V27c0-7-4-12-10-12s-10 5-10 12v11Z"></path>
+                <path d="M27 50c1 4 3 6 5 6s4-2 5-6"></path>
+              </svg>
+            </div>
+            <h3>تابع من حافظة</h3>
+            <p>تابع ما يقترب موعده، وارجع إلى سجل فواتيرك وعملياتك وقت الحاجة.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="container cta-content reveal">
+        <a class="cta-brand" href="#home">حافظة</a>
+        <h2>فواتيرك محفوظة،<br>حقوقك ما تضيع.</h2>
+        <p>ابدأ بتنظيم فواتيرك مع حافظة.</p>
+
+        <a class="button button--light button--wide" href="/hafidah/app/auth/register">إنشاء حساب</a>
+        <span class="cta-login">لديك حساب؟ <a href="/hafidah/app/auth/login">تسجيل الدخول</a></span>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <strong>حافظة</strong>
+      <span>© 2026 حافظة</span>
+    </div>
+  </footer>
+
+  <script src="/hafidah/welcome/js/main.js"></script>
+</body>
+</html>
